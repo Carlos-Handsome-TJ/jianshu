@@ -1,12 +1,16 @@
-import React from 'react';
-import './App.css';
+import React, {Fragment} from 'react';
+import Header from "./common/header";
+import { GlobalStyle } from './style';
+import { GlobalIcon } from "./static/iconfont/iconfont";
 
 function App() {
-  return (
-    <div>
-     Hello~
-    </div>
-  );
+    return (
+        <Fragment>
+            <GlobalStyle/>
+            <GlobalIcon/>
+            <Header/>
+        </Fragment>
+    );
 }
 
 export default App;
