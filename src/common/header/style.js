@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "../static/logo.png";
+import Logo from "../../static/logo.png";
 
 
 export const HeaderWrapper = styled.div`
