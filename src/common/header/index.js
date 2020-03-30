@@ -56,7 +56,7 @@ export const Index = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-      focused: state.header.focused
+      focused: state.getIn(['header', 'focused'])
   }
 };
 const mapDispatchToProps = (dispatch) => {
