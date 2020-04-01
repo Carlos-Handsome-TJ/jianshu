@@ -37,22 +37,38 @@ export const NavWrapper = styled.div`
         width: 160px;
     }
     .iconfont {
-        display: inline-block;  
         position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-45%);
-        height: 26px;
-        width: 26px;
-        font-size: 12px;
-        line-height: 26px;
+        display: inline-block;  
         text-align: center;
-        border-radius: 26px;
         box-sizing: border-box;
         font-size: 20px;
+        right: 10px;
            &.active {
+                top: 50%;
+                transform: translateY(-45%);
+                line-height: 26px;
+                height: 26px;
+                width: 26px;
                 background: #969696;
+                border-radius: 26px;
            }
+           &.switch {
+                right: 65px;
+                height: 20px;
+                width: 20px;
+                line-height: 20px;
+                color: #777;
+                rotate: 360deg;
+                }
+           &.triangle {
+                height: 26px;
+                width: 26px;
+                line-height: 26px;
+                left: 20px;
+                top: -20px;
+                color: #fff;
+                font-size: 15px;
+                 }
     }
 `;
 export const Nav = styled.div`
@@ -64,8 +80,7 @@ export const Addition = styled.div`
     width: 23%;
     line-height: 56px;
 `;
-export const NavItem = styled.a.attrs({
-})`
+export const NavItem = styled.a.attrs({})`
     display: block;
     height: 26px;
     line-height: 26px;
@@ -130,4 +145,50 @@ export const AdditionItem = styled.a`
         border: 1px solid #ea6f5a;
         border-radius: 20px;
         }
+`;
+export const SearchArea = styled.div`
+    position: absolute;
+    top: 70px;
+    width: 300px;
+    padding: 10px 20px;
+    line-height: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+`;
+export const SearchHeader = styled.div`
+    width: 100%;
+    display: flex;
+    line-height: 20px;
+    justify-content: space-between;
+    color: #777;
+    user-select: none;
+`;
+export const SearchHot = styled.span`
+    display: block;
+    font-size: 13px;
+`;
+export const SearchSwitch = styled.span`
+    display: block;
+    font-size: 13px;
+    cursor: pointer;
+    .rotate-enter {
+        rotate: 0deg;
+        transition: rotate 0.2s ease-in;
+        }
+    .rotate-enter-active {
+        rotate: 360deg;
+        }
+`;
+export const SearchItem = styled.a`
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin: 10px 15px 0 0;
+    border: 1px solid #969696;
+    border-radius: 3px;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    background: rgba(238, 238, 238, 0.3);
 `;
