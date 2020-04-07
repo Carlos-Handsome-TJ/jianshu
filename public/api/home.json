@@ -1,0 +1,98 @@
+{
+  "status": true,
+  "imgList" : ["./images/test1.jpg", "./images/test2.jpg", "./images/test3.JPG"],
+  "topicList": [
+    {
+      "id": "0001",
+      "content": "手绘",
+      "imgUrl": "./images/test1.jpg"
+    },
+    {
+      "id": "0002",
+      "content": "社会热点",
+      "imgUrl": "./images/test2.jpg"
+    },
+    {
+      "id": "0003",
+      "content": "简书电影",
+      "imgUrl": "./images/test2.jpg"
+    },
+    {
+      "id": "0004",
+      "content": "手绘",
+      "imgUrl": "./images/test1.jpg"
+    },
+    {
+      "id": "0005",
+      "content": "社会热点",
+      "imgUrl": "./images/test2.jpg"
+    },
+    {
+      "id": "0006",
+      "content": "简书电影",
+      "imgUrl": "./images/test2.jpg"
+    },
+    {
+      "id": "0007",
+      "content": "简书电影",
+      "imgUrl": "./images/test2.jpg"
+    }
+  ],
+  "contentList": [
+    {
+      "id": "0001",
+      "title": "细读《挪威的森林》",
+      "content": "《挪威的森林》，村上春树的代表作。因它的名气特别响亮，特定网购了一本，放在书架上放好几个月了，最近才有时间打开阅读。 花了六天时间读完，基本上是... ",
+      "imgUrl": "https://upload-images.jianshu.io/upload_images/15517692-7a1b517edb1eff6d.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+      "dom" : 13,
+      "fav" : 125,
+      "author" : "芭蕉",
+      "comment" : 12,
+      "appreciate" : 2
+    },
+    {
+      "id": "0002",
+      "title": "心理学：往往能让男人上瘾的，是那些“低投入”的女人",
+      "content": "金星老师在节目中曾经说过这样一段话：“尽力去爱一个人，是不会有好下场的。在爱情中，如果你的底牌被看穿，你的优点会被无限缩小而缺点会被无限放大，对... ",
+      "imgUrl": "https://upload-images.jianshu.io/upload_images/11864358-a0a516a8e7bbaa45?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+      "dom" : 18,
+      "fav" : 1223,
+      "author" : "Alvin",
+      "comment" : 122,
+      "appreciate" : 12
+    },
+    {
+      "id": "0003",
+      "title": "《让岁月变成诗》名人语录",
+      "content": "梁实秋说：你走，我不送你。你来，无论多大风多大雨，我要去接你。 海明威说：优于别人，并不高贵，真正的高贵应该是优于过去的自己。 顾漫说：一个笑就... ",
+      "imgUrl": "https://upload-images.jianshu.io/upload_images/15684874-ffc8c037e5f10911.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240",
+      "dom" : 3,
+      "fav" : 3,
+      "author" : "Carlos",
+      "comment" : 1,
+      "appreciate" : ""
+    }
+  ],
+  "boardList": [
+    {
+      "id": "0001",
+      "content": "简书会员",
+      "imgUrl": "//cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
+    },
+    {
+      "id": "0002",
+      "content": "优选连载",
+      "imgUrl": "//cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+    },
+    {
+      "id": "0003",
+      "content": "简书版权",
+      "imgUrl": "//cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+    },
+    {
+      "id": "0004",
+      "content": "简书大学堂",
+      "imgUrl": "//cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+    }
+  ]
+}

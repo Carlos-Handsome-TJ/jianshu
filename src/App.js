@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import Header from "./common/header/index";
+import Home from "./pages/home";
 import { Provider } from "react-redux";
 import store from "./store";
 import { GlobalStyle } from './style';
@@ -12,6 +13,7 @@ function App() {
                 <GlobalStyle/>
                 <GlobalIcon/>
                 <Header/>
+                <Home/>
             </Provider>
         </Fragment>
     );

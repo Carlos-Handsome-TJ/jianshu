@@ -152,6 +152,7 @@ export const SearchArea = styled.div`
     width: 300px;
     padding: 10px 20px;
     line-height: 30px;
+    background: #fff;
     box-sizing: border-box;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 `;
