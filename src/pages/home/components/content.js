@@ -13,7 +13,7 @@ const Contents = (props) => {
                         <ContentImg>
                             <img
                                 className={'content_img'}
-                                src={item.get("imgUrl")} alt=""/>
+                                src={process.env.PUBLIC_URL + item.get("imgUrl")} alt=""/>
                         </ContentImg>
                         <ContentTitle>
                             <h3>{item.get("title")}</h3>

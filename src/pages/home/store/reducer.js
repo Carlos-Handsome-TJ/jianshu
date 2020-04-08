@@ -2,10 +2,14 @@ import { constants } from "./index"
 import { fromJS } from "immutable";
 
 const defaultState = fromJS({
+    show: false,
     imgList: [],
     topicList: [],
     contentList: [],
     boardList: [],
+    recommendList: [],
+    page: '',
+    totalPage: ''
 });
 
 export default (state = defaultState, action) => {
@@ -15,8 +19,19 @@ export default (state = defaultState, action) => {
                 imgList: action.imgList,
                 topicList: action.topicList,
                 contentList: action.contentList,
-                boardList: action.boardList
+                boardList: action.boardList,
+                recommendList: action.recommendList,
+                page: action.page,
+                totalPage: action.totalPage
             });
+        case constants.HANDLE_DOWNLOAD:
+            return state.set('show', true);
+        case constants.HIDDEN_DOWNLOAD:
+            return state.set('show', false);
+        case constants.HANDLE_CLICK_ADD:
+            return state.set('page', action.value);
+        case constants.HANDLE_CLICK_SUB:
+            return state.set('page', 1)
         default:
             return state;
     }

@@ -13,9 +13,8 @@ export const HomeLeft = styled.div`
 `;
 export const HomeRight = styled.div`
     float: right;
-    width: 35%;
+    width: 32%;
     height: 300px;
-    background: blue;
 `;
 export const HomeImg = styled.div`
     overflow: hidden;
@@ -110,18 +109,141 @@ export const ContentIcon = styled.div`
         font-size: 12px;
         }
 `;
-export const Download = styled.div`
+export const Download = styled.a`
+    display: block;
+    position: relative;
+    vertical-align: middle;
     width: 100%;
-    height: 50px;
-    background: red;
+    height: 86px;
+    margin-bottom: 20px;
+    user-select: none;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    background: #fff;
+    .downloadImg {
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin-right: 15px;
+        }
+    .app {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 4px;
+        }
+    .write {
+        font-size: 13px;
+        color: #999;
+        }
+`;
+export const DownloadInfo = styled.div`
+    float: right;
+`;
+export const DownloadBlock = styled.div`
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -220px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #fff;
+    .hiddenImg {
+        width: 100%;
+        }
+    .block {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #000;
+        font-size: 25px;
+        }
 `;
 export const Board = styled.div`
     width: 100%;
-    height: 300px;
-    background: sky;
+    margin-bottom: 10px;
+`;
+export const BoardItem = styled.div`
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    .boardItem {
+        display: block;
+        .boardImg {
+            width: 100%;
+            }
+        }
 `;
 export const Recommend = styled.div`
     width: 100%;
     height: 300px;
-    background: yellow;
+`;
+export const RecommendHeader = styled.div`
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #969696;
+    display: flex;
+    justify-content: space-between;
+    .rec-author {
+            font-size: 14px;
+            }
+    .renewal {
+            font-size: 14px;
+            cursor: pointer;
+            }
+`;
+export const RecommendList = styled.div`
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    position: relative;
+    .rec_wrapper {
+        display: flex;
+        width: 100%;
+        }
+    .img_wrapper {
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        }
+    .rec_img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        }
+    .rec_author {
+        display: inline-block;
+        line-height: 30px;
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+        }
+    .rec_des {
+        color: red;
+        font-size: 12px;
+        line-height: 20px
+        }
+    .add {
+        position: absolute;
+        top: 2px;
+        right: -40px;
+        display: block;
+        width: 30%;
+        font-size: 13px;
+        text-decoration: none;
+        color: green;
+        }
 `;

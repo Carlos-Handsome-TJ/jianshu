@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
 import axios from "axios";
+import { connect } from "react-redux"
 import {HomeWrapper, HomeLeft, HomeRight} from "./style";
 import  Img  from "./components/img";
 import Topics from "./components/topic";
-import { connect } from "react-redux"
 import  Contents  from "./components/content";
-import { Downloads} from "./components/download";
-import { Boards } from "./components/board";
-import { Recommends } from "./components/recommend";
+import Downloads from "./components/download";
+import Boards from "./components/board";
+import Recommends from "./components/recommend";
 import { actionCreators } from "./store/index";
 
 class Home extends React.Component {
