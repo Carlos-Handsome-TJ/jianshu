@@ -16,15 +16,7 @@ class Home extends React.Component {
         this.state = {};
     }
     componentDidMount() {
-        axios.get("./api/home.json").then((res) => {
-            const data = res.data;
-            if (data.status) {
-                const action = actionCreators.getHomeData(data);
-                this.props.handleData(action);
-            }
-        }).catch(() => {
-            console.log("获取home数据失败~");
-        })
+        this.props.handleData();
     }
     render() {
         return (
@@ -33,12 +25,12 @@ class Home extends React.Component {
                     <HomeLeft>
                         <Img />
                         <Topics/>
-                        <Contents></Contents>
+                        <Contents/>
                     </HomeLeft>
                     <HomeRight>
-                        <Boards></Boards>
-                        <Downloads></Downloads>
-                        <Recommends></Recommends>
+                        <Boards/>
+                        <Downloads/>
+                        <Recommends/>
                     </HomeRight>
                 </HomeWrapper>
             </Fragment>
@@ -47,8 +39,9 @@ class Home extends React.Component {
 }
 const mapDispatch = (dispatch) => {
   return {
-      handleData(action) {
-          dispatch(action)
+      handleData() {
+          const action = actionCreators.getHomeData();
+          dispatch(action);
       }
   }
 };

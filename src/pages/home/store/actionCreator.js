@@ -1,5 +1,7 @@
 import {fromJS} from "immutable";
 import * as constants  from "./constants";
+import axios from "axios";
+
 const getHomeList = (data) => ({
     type: constants.GET_HOME_DATA,
     imgList: fromJS(data.imgList),
@@ -10,10 +12,17 @@ const getHomeList = (data) => ({
     page: fromJS(1),
     totalPage: fromJS(Math.ceil(data.recommendList.length / 4))
 });
-export const getHomeData = (data) => {
+export const getHomeData = () => {
     return (dispatch) => {
-        const action = getHomeList(data);
-        dispatch(action);
+        axios.get("./api/home.json").then((res) => {
+            const data = res.data;
+            if (data.status) {
+                const action = getHomeList(data);
+                dispatch(action);
+            }
+        }).catch(() => {
+            console.log("获取home数据失败~");
+        })
     }
 };
 export const showDownload = () => ({
