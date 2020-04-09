@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { BackTopWrapper } from "../style";
 import { changeScroll, hiddenScroll } from "../store/actionCreator"
 
-class BackTop extends React.Component {
+class BackTop extends React.PureComponent {
     componentDidMount() {
         this.bindEvent();
     }

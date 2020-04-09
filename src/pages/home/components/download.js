@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { showDownload, hiddenDownload } from "../store/actionCreator";
 import { Download, DownloadInfo, DownloadBlock } from "../style"
 
-class Downloads extends React.Component {
+class Downloads extends React.PureComponent {
     constructor(props) {
         super(props);
         this.getDownload = this.getDownload.bind(this)

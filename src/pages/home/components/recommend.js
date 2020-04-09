@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import {Recommend, RecommendHeader, RecommendList,} from "../style"
 import { getNewListAdd, getNewListSub } from "../store/actionCreator"
 
-class Recommends extends React.Component {
+class Recommends extends React.PureComponent {
     constructor(props) {
         super(props);
         this.getRecList = this.getRecList.bind(this);

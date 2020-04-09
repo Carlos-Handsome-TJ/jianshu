@@ -265,7 +265,7 @@ export const BackTopWrapper = styled.div`
 export const LoadMore = styled.div`
     width: 100%;
     height: 40px;
-    background: grey;
+    background: #ccc;
     text-align: center;
     cursor: pointer;
     margin-top: 20px;

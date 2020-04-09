@@ -18,7 +18,7 @@ import {
 } from "./style"
 import CSSTransition from "react-transition-group/cjs/CSSTransition";
 
-class Header extends React.Component {
+class Header extends React.PureComponent {
     constructor(props) {
         super(props);
         this.getSearch = this.getSearch.bind(this);

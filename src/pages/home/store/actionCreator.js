@@ -12,6 +12,10 @@ const getHomeList = (data) => ({
     page: fromJS(1),
     totalPage: fromJS(Math.ceil(data.recommendList.length / 4))
 });
+const getMore = (data) => ({
+    type: constants.GET_MORE_LIST,
+    moreList: fromJS(data.data.contentList)
+});
 export const getHomeData = () => {
     return (dispatch) => {
         axios.get("./api/home.json").then((res) => {
@@ -43,10 +47,6 @@ export const changeScroll = () => ({
 })
 export const hiddenScroll = () =>({
     type: constants.HIDDEN_SCROLL
-});
-const getMore = (data) => ({
-    type: constants.GET_MORE_LIST,
-    moreList: fromJS(data.data.contentList)
 });
 export const getMoreList = () => {
     return (dispatch) => {

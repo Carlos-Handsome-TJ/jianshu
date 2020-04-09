@@ -11,9 +11,7 @@ export const HeaderWrapper = styled.div`
     line-height: 56px;
     border-bottom: 1px solid #eee;
 `;
-export const LogoWrapper = styled.a.attrs({
-    href: '/'
-})`
+export const LogoWrapper = styled.a`
     display: block;
     height: 100%;
     width: 17%;
