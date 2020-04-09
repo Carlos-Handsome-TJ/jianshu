@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import axios from "axios";
 import { connect } from "react-redux"
 import {HomeWrapper, HomeLeft, HomeRight} from "./style";
 import  Img  from "./components/img";
@@ -9,6 +8,8 @@ import Downloads from "./components/download";
 import Boards from "./components/board";
 import Recommends from "./components/recommend";
 import { actionCreators } from "./store/index";
+import BackTop from "./components/backtop"
+import LoadMoreList from "./components/loadMore"
 
 class Home extends React.Component {
     constructor(props) {
@@ -26,6 +27,7 @@ class Home extends React.Component {
                         <Img />
                         <Topics/>
                         <Contents/>
+                        <LoadMoreList/>
                     </HomeLeft>
                     <HomeRight>
                         <Boards/>
@@ -33,6 +35,7 @@ class Home extends React.Component {
                         <Recommends/>
                     </HomeRight>
                 </HomeWrapper>
+                <BackTop/>
             </Fragment>
         );
     }

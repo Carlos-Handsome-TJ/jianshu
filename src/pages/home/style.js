@@ -247,3 +247,28 @@ export const RecommendList = styled.div`
         color: green;
         }
 `;
+export const BackTopWrapper = styled.div`
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: orange;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 550px;
+    right: 100px;
+    cursor: pointer;
+`;
+export const LoadMore = styled.div`
+    width: 100%;
+    height: 40px;
+    background: grey;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+    line-height: 40px;
+`;

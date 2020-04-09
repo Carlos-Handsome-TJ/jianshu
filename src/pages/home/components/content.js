@@ -5,10 +5,10 @@ import { Content, ContentWrapper, ContentTitle, ContentImg, ContentDes, ContentI
 const Contents = (props) => {
     return (
         <Content>
-            {props.contentList.map((item) => {
+            {props.contentList.map((item, index) => {
                 return (
                     <ContentWrapper
-                    key={item.get("id")}
+                    key={index}
                     >
                         <ContentImg>
                             <img

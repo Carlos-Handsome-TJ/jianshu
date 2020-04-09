@@ -1,4 +1,4 @@
-import {fromJS} from "immutable";
+import { fromJS } from "immutable";
 import * as constants  from "./constants";
 import axios from "axios";
 
@@ -38,3 +38,26 @@ export const getNewListAdd = (page) => ({
 export const getNewListSub = () => ({
     type: constants.HANDLE_CLICK_SUB
 })
+export const changeScroll = () => ({
+    type: constants.CHANGE_SCROLL
+})
+export const hiddenScroll = () =>({
+    type: constants.HIDDEN_SCROLL
+});
+const getMore = (data) => ({
+    type: constants.GET_MORE_LIST,
+    moreList: fromJS(data.data.contentList)
+});
+export const getMoreList = () => {
+    return (dispatch) => {
+        axios.get('./api/morelist.json').then(res => {
+            const data = res.data;
+            if (data.success) {
+                const action = getMore(data);
+                dispatch(action);
+            }
+        }).catch(() => {
+            console.log("获取更多数据失败~");
+        })
+    }
+}

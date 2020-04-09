@@ -1,0 +1,40 @@
+{
+  "success" : true,
+  "data": {
+    "contentList": [
+      {
+        "id": "0001",
+        "title": "细读《挪威的森林》",
+        "content": "《挪威的森林》，村上春树的代表作。因它的名气特别响亮，特定网购了一本，放在书架上放好几个月了，最近才有时间打开阅读。 花了六天时间读完，基本上是... ",
+        "imgUrl": "/images/banner1.jpg",
+        "dom": 13,
+        "fav": 125,
+        "author": "芭蕉",
+        "comment": 12,
+        "appreciate": 2
+      },
+      {
+        "id": "0002",
+        "title": "心理学：往往能让男人上瘾的，是那些“低投入”的女人",
+        "content": "金星老师在节目中曾经说过这样一段话：“尽力去爱一个人，是不会有好下场的。在爱情中，如果你的底牌被看穿，你的优点会被无限缩小而缺点会被无限放大，对... ",
+        "imgUrl": "/images/banner2.jpg",
+        "dom": 18,
+        "fav": 1223,
+        "author": "Alvin",
+        "comment": 122,
+        "appreciate": 12
+      },
+      {
+        "id": "0003",
+        "title": "《让岁月变成诗》名人语录",
+        "content": "梁实秋说：你走，我不送你。你来，无论多大风多大雨，我要去接你。 海明威说：优于别人，并不高贵，真正的高贵应该是优于过去的自己。 顾漫说：一个笑就... ",
+        "imgUrl": "/images/banner3.jpg",
+        "dom": 3,
+        "fav": 3,
+        "author": "Carlos",
+        "comment": 1,
+        "appreciate": ""
+      }
+    ]
+  }
+}
