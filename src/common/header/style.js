@@ -85,6 +85,7 @@ export const NavItem = styled.div`
     padding: 15px;
     font-size: 17px;
     vertical-align: middle;
+    cursor: pointer;
     &.active {
         color: #ea6f5a;
         }

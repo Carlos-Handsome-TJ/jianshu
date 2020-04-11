@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import {connect} from "react-redux";
 import { NavLink } from "react-router-dom";
 import {actionCreators} from "./store";
+import { changeLogout } from "../../login/store/actionCreators";
 import {
     HeaderWrapper,
     LogoWrapper,
@@ -66,7 +67,7 @@ class Header extends React.PureComponent {
     }
 
     render() {
-        const {focused, handelFocus, list, handelBlur} = this.props;
+        const {focused, handelFocus, list, handelBlur, login, logout} = this.props;
         return (
             <Fragment>
                 <HeaderWrapper>
@@ -102,7 +103,15 @@ class Header extends React.PureComponent {
                             >&#xe60b;</span>
                             {this.getSearch(focused)}
                         </NavWrapper>
-                        <NavItem className={'right'}>登录</NavItem>
+
+                            {login ?
+                                <NavItem
+                                    onClick={logout}
+                                    className={'right'}>退出</NavItem> :
+                                <NavLink to="/login">
+                                    <NavItem className={'right'}>登录</NavItem>
+                                </NavLink>}
+
                         <NavItem className={'right'}>
                             <span className={'iconfont diamond'}>&#xe6c3;</span>
                             beta</NavItem>
@@ -129,7 +138,8 @@ const mapStateToProps = (state) => {
         list: state.getIn(['header', 'list']),
         mouseIn: state.getIn(['header', 'mouseIn']),
         page: state.getIn(['header', 'page']),
-        totalPage: state.getIn(['header', 'totalPage'])
+        totalPage: state.getIn(['header', 'totalPage']),
+        login: state.getIn(['login', 'login'])
     }
 };
 const mapDispatchToProps = (dispatch) => {
@@ -152,6 +162,9 @@ const mapDispatchToProps = (dispatch) => {
         changeClick(page, totalPage) {
             page < totalPage ? dispatch(actionCreators.getChangePage(page + 1))
                 :  dispatch(actionCreators.getChangePage(1));
+        },
+        logout() {
+            dispatch(changeLogout());
         }
     }
 };

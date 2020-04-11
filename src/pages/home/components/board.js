@@ -9,10 +9,10 @@ const Boards = (props) => {
                 props.boardList.map((item) => {
                     return (
                         <BoardItem key={item.get("id")}>
-                            <a className={"boardItem"}>
+                            <span className={"boardItem"}>
                                 <img className={"boardImg"}
                                      src={process.env.PUBLIC_URL + item.get("imgUrl")} alt=""/>
-                            </a>
+                            </span>
                         </BoardItem>
                     )
                 })
