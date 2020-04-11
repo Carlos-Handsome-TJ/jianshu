@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import Header from "./common/header/index";
 import Home from "./pages/home";
-import Detail from "./pages/detail";
+import Detail from "./pages/detail/loadable";
 import Login from "./login/index"
 import { Provider } from "react-redux";
 import store from "./store";
