@@ -4,10 +4,6 @@ import {Recommend, RecommendHeader, RecommendList,} from "../style"
 import { getNewListAdd, getNewListSub } from "../store/actionCreator"
 
 class Recommends extends React.PureComponent {
-    constructor(props) {
-        super(props);
-        this.getRecList = this.getRecList.bind(this);
-    }
     getRecList() {
         const { page, recommendList } = this.props;
         const newRecList = recommendList.toJS();

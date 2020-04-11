@@ -12,10 +12,6 @@ import BackTop from "./components/backtop"
 import LoadMoreList from "./components/loadMore"
 
 class Home extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
     componentDidMount() {
         this.props.handleData();
     }

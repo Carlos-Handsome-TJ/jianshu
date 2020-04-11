@@ -1,5 +1,6 @@
 import React, {Fragment} from "react";
 import {connect} from "react-redux";
+import { NavLink } from "react-router-dom";
 import {actionCreators} from "./store";
 import {
     HeaderWrapper,
@@ -71,14 +72,19 @@ class Header extends React.PureComponent {
                 <HeaderWrapper>
                     <LogoWrapper/>
                     <Nav>
-                        <NavItem className={'left active'}>
-                            <span className={'iconfont'}>&#xe632;</span>
-                            首页
-                        </NavItem>
-                        <NavItem className={'left'}>
-                            <span className={'iconfont'}>&#xe6db;</span>
-                            下载App
-                        </NavItem>
+                        <NavLink to={"/"}>
+                            <NavItem className={'left active'}>
+                                <span className={'iconfont'}>&#xe632;</span>
+                                首页
+                            </NavItem>
+                        </NavLink>
+                        <NavLink to={"/download"}>
+                            <NavItem className={'left'}>
+                                <span className={'iconfont'}>&#xe6db;</span>
+                                下载App
+                            </NavItem>
+                        </NavLink>
+
                         <NavWrapper>
                             <CSSTransition
                                 in={focused}

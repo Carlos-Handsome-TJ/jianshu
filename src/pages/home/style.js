@@ -19,7 +19,6 @@ export const HomeRight = styled.div`
 export const HomeImg = styled.div`
     overflow: hidden;
     width: 100%;
-    background: yellow;
     margin-bottom: 20px;
     .home_img {
         width: 85%;

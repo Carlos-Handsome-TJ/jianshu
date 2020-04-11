@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.div`
     line-height: 56px;
     border-bottom: 1px solid #eee;
 `;
-export const LogoWrapper = styled.a`
+export const LogoWrapper = styled.div`
     display: block;
     height: 100%;
     width: 17%;
@@ -78,8 +78,7 @@ export const Addition = styled.div`
     width: 23%;
     line-height: 56px;
 `;
-export const NavItem = styled.a.attrs({})`
-    display: block;
+export const NavItem = styled.div`
     height: 26px;
     line-height: 26px;
     width: auto;

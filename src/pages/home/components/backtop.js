@@ -33,7 +33,8 @@ class BackTop extends React.PureComponent {
 
 const mapState = (state) => {
     return {
-        scroll: state.getIn(['home', 'scroll'])
+        scroll: state.getIn(['home', 'scroll']),
+        recommendList: state.get(['home', 'recommendList'])
     }
 }
 const mapDispatch = (dispatch) => {
